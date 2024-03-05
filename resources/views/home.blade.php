@@ -6,8 +6,8 @@
     <div class="container col-xxl-8 px-4 py-4">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Jangan Biarkan Nilaimu Terhenti!</h1>
-                <p class="lead">Siapkan dan sesuaikan tugas-tugas akademik dengan mudah. Temukan alat yang tepat untuk membantu Anda meraih kesuksesan dalam setiap proyek. Dapatkan hasil optimal dengan pendekatan yang efisien dan efektif untuk setiap tugas Anda.</p>
+                <h1 class="display-5 fw-bold lh-sm mb-3">Mengubah Kesulitan Menjadi Kemudahan</h1>
+                <p class="lead">Jangan biarkan kesulitan akademis menghambat impian Anda. Temukan solusi dengan Nugas ICN hari ini! Sambut tantangan dengan percaya diri dan raih prestasi Anda yang terbaik.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Konsultasi Sekarang</button>
                 </div>
@@ -26,42 +26,61 @@
     <div class="container marketing">
         
         <div class="row">
-            <h4 class="display-6 text-center mt-2 mb-4">Keunggulan Kami</h4>
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is
-                    the first column.</p>
-                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
-                    second column.</p>
-                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
-                <h2 class="fw-normal">Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
+            <h4 class="display-6 text-center mt-2 mb-4">Keunggulan Kami</i></h4>
+            <div class="col-lg-4 text-center">
+                <div class="d-flex justify-content-center"> <!-- Membuat konten menjadi tengah -->
+                    <div class="rounded-circle bg-success d-flex justify-content-center align-items-center" style="width: 140px; height: 140px;">
+                        <i class="fas fa-lightbulb fa-4x text-white"></i>
+                    </div>
+                </div>
+                <h2 class="fw-normal mt-2">Inovatif</h2>
+                <p>Menerapkan pendekatan pembelajaran yang inovatif dan berbasis teknologi untuk mengatasi kesulitan belajar dengan efektif.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="d-flex justify-content-center"> <!-- Membuat konten menjadi tengah -->
+                    <div class="rounded-circle bg-success d-flex justify-content-center align-items-center" style="width: 140px; height: 140px;">
+                        <i class="fas fa-user-alt fa-4x text-white"></i>
+                    </div>
+                </div>
+                <h2 class="fw-normal mt-2">Personalisasi</h2>
+                <p>Menyediakan solusi pendidikan yang disesuaikan dengan kebutuhan individu setiap siswa atau mahasiswa untuk memastikan pencapaian akademis yang maksimal.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="d-flex justify-content-center"> <!-- Membuat konten menjadi tengah -->
+                    <div class="rounded-circle bg-success d-flex justify-content-center align-items-center" style="width: 140px; height: 140px;">
+                        <i class="fas fa-chalkboard-teacher fa-4x text-white"></i>
+                    </div>
+                </div>
+                <h2 class="fw-normal mt-2">Ahli</h2>
+                <p>Memiliki tim tutor yang berkualifikasi tinggi dan berpengalaman dalam berbagai mata pelajaran untuk memberikan bimbingan terbaik kepada setiap pengguna.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="d-flex justify-content-center"> <!-- Membuat konten menjadi tengah -->
+                    <div class="rounded-circle bg-success d-flex justify-content-center align-items-center" style="width: 140px; height: 140px;">
+                        <i class="fas fa-laptop fa-4x text-white"></i>
+                    </div>
+                </div>
+                <h2 class="fw-normal mt-2">Mudah</h2>
+                <p>Memberikan akses mudah dan fleksibel melalui platform online yang dapat diakses kapan saja dan di mana saja sesuai kebutuhan pengguna.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="d-flex justify-content-center"> <!-- Membuat konten menjadi tengah -->
+                    <div class="rounded-circle bg-success d-flex justify-content-center align-items-center" style="width: 140px; height: 140px;">
+                        <i class="fas fa-shield-alt fa-4x text-white"></i>
+                    </div>
+                </div>
+                <h2 class="fw-normal mt-2">Terpercaya</h2>
+                <p>Dibangun dengan reputasi yang kuat sebagai mitra pendidikan yang dapat diandalkan dalam membantu siswa dan mahasiswa mengatasi tantangan akademis.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="d-flex justify-content-center"> <!-- Membuat konten menjadi tengah -->
+                    <div class="rounded-circle bg-success d-flex justify-content-center align-items-center" style="width: 140px; height: 140px;">
+                        <i class="fas fa-stopwatch fa-4x text-white"></i>
+                    </div>
+                </div>
+                <h2 class="fw-normal mt-2">Efesien</h2>
+                <p>Menyediakan solusi pendidikan yang efisien dan efektif, membantu siswa dan mahasiswa menghemat waktu dan energi dalam menyelesaikan tugas dan proyek akademis mereka.</p>
+            </div>
         </div>
 
         <hr class="featurette-divider">
