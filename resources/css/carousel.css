@@ -59,6 +59,7 @@ p {
     font-family: 'Inter', sans-serif;
 }
 
+
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
@@ -80,5 +81,13 @@ p {
 @media (min-width: 62em) {
     .featurette-heading {
         margin-top: 7rem;
+    }
+}
+
+/* CSS for responsive carousel */
+@media (max-width: 768px) {
+    #carouselExampleCaptions .carousel-inner .carousel-item img {
+        max-height: 300px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+        width: auto; /* Biarkan lebar gambar menyesuaikan dengan tinggi */
     }
 }
