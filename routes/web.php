@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 // Landing page
 Route::get('/', [PageViewController::class, 'home'])->name('landing');
+Route::get('/blog', [PageViewController::class, 'blog'])->name('blog');
