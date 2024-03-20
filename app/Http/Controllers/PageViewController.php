@@ -11,6 +11,10 @@ class PageViewController extends Controller
     }
 
     public function blog(){
-        return view('blog');
+        return view('blog.index');
+    }
+
+    public function blogPost(){
+        return view('blog.post');
     }
 }

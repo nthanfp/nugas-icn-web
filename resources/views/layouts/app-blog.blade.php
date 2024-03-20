@@ -71,20 +71,10 @@
                         <a class="nav-link text-white d-none d-sm-none d-md-block" href="#">Subscribe</a>
                     </div>
                     <div class="col-4 text-center">
-                        <a class="blog-header-logo text-white"
-                            href="#">{{ config('app.name', 'Nugas by ICN') }}</a>
+                        <img src="{{ asset('img/navbar.png') }}" alt="Logo" class="blog-header-logo img-fluid" width="200">
                     </div>
                     <div class="col-4 d-flex justify-content-end align-items-center">
                         <div class="d-none d-sm-none d-md-flex">
-                            <a class="link-secondary" href="#" aria-label="Search">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24">
-                                    <title>Search</title>
-                                    <circle cx="10.5" cy="10.5" r="7.5"></circle>
-                                    <path d="M21 21l-5.2-5.2"></path>
-                                </svg>
-                            </a>
                             <a class="btn btn-sm bg-white" href="#">Konsultasi Tugas</a>
                         </div>
                     </div>
@@ -93,18 +83,13 @@
 
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex justify-content-between" style="text-decoration: none;">
-                    <a class="p-2 nav-link text-white" href="#">World</a>
-                    <a class="p-2 nav-link text-white" href="#">U.S.</a>
-                    <a class="p-2 nav-link text-white" href="#">Technology</a>
-                    <a class="p-2 nav-link text-white" href="#">Design</a>
-                    <a class="p-2 nav-link text-white" href="#">Culture</a>
-                    <a class="p-2 nav-link text-white" href="#">Business</a>
-                    <a class="p-2 nav-link text-white" href="#">Politics</a>
-                    <a class="p-2 nav-link text-white" href="#">Opinion</a>
-                    <a class="p-2 nav-link text-white" href="#">Science</a>
-                    <a class="p-2 nav-link text-white" href="#">Health</a>
-                    <a class="p-2 nav-link text-white" href="#">Style</a>
-                    <a class="p-2 nav-link text-white" href="#">Travel</a>
+                    <a class="p-2 nav-link text-white" href="#">Beranda</a>
+                    <a class="p-2 nav-link text-white" href="#">Layanan</a>
+                    <a class="p-2 nav-link text-white" href="#">Ketentuan</a>
+                    <a class="p-2 nav-link text-white" href="#">Joki Individu</a>
+                    <a class="p-2 nav-link text-white" href="#">Joki Kelompok</a>
+                    <a class="p-2 nav-link text-white" href="#">Joki Tugas Akhir</a>
+                    <a class="p-2 nav-link text-white" href="#">Joki Ujian</a>
                 </nav>
             </div>
         </div>

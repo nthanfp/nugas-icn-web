@@ -3,8 +3,8 @@
 @section('title', 'Jasa Joki Tugas Murah')
 
 @section('content')
-    <div class="bg-success">
-        <div class="container col-xxl-8 px-4 py-4">
+    <div class="bg-success pt-4">
+        <div class="container col-xxl-8 px-4 pt-4 pb-0">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-sm mb-3 text-white">Mengubah Kesulitan Menjadi Kemudahan</h1>
