@@ -13,7 +13,9 @@ class ListJokiPortfolios extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+                ->label('Add Joki Portfolio')
+                ->icon('heroicon-s-plus')
         ];
     }
 }

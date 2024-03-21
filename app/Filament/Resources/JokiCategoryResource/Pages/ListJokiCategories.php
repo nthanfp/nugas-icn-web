@@ -13,7 +13,9 @@ class ListJokiCategories extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+                ->label('Add Joki Category')
+                ->icon('heroicon-s-plus'),
         ];
     }
 }
