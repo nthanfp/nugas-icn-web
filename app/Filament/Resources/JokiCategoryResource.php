@@ -7,11 +7,13 @@ use App\Filament\Resources\JokiCategoryResource\RelationManagers;
 use App\Models\JokiCategory;
 use Filament\Forms;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Str;
 
 class JokiCategoryResource extends Resource
 {
@@ -25,7 +27,9 @@ class JokiCategoryResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->live(debounce: 250)
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->maxLength(255),
