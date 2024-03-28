@@ -16,5 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 // Landing page
 Route::get('/', [PageViewController::class, 'home'])->name('landing');
+
+// Main Page
+Route::get('/layanan', [PageViewController::class, 'layanan'])->name('layanan');
+Route::get('/layanan/{name}', [PageViewController::class, 'layananCustom'])->name('layanan-custom');
+
+// Blog
 Route::get('/blog', [PageViewController::class, 'blog'])->name('blog');
 Route::get('/blog/post', [PageViewController::class, 'blogPost'])->name('blog-post');

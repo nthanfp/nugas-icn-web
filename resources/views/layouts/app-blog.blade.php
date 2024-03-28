@@ -63,6 +63,7 @@
 </head>
 
 <body>
+    </div>
     <div class="bg-success">
         <div class="container">
             <header class="blog-header text-white lh-1 py-3">
