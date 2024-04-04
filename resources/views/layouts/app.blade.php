@@ -9,11 +9,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description"
+        content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu.">
+    <meta name="keywords" content="Nugas, ICN, penulisan, makalah, esai, artikel, paper, jasa penulisan">
+    <meta name="author" content="Nugas by ICN">
     <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css', 'resources/css/blog.css'])
     <style>
         .head-title {
@@ -98,7 +103,7 @@
                             <a class="nav-link" href="{{ route('layanan') }}">Layanan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ketentuan</a>
+                            <a class="nav-link" href="{{ route('blog') }}">Blog</a>
                         </li>
                     </ul>
                 </div>
