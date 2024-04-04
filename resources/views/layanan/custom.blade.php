@@ -44,10 +44,12 @@
     <section id="Deskripsi">
         <div class="container mt-3">
             <div class="row justify-content-center">
-                <h6 class="display-6 fw-bolder text-center text-success mt-2 mb-2" style="text-shadow: 2px 2px 2px rgba(56, 56, 56, 0.2);">Harga Layanan</h6>
+                <h6 class="display-6 fw-bolder text-center text-success mt-2 mb-2"
+                    style="text-shadow: 2px 2px 2px rgba(56, 56, 56, 0.2);">Harga Layanan</h6>
                 <div class="col-md-10">
                     <p style="text-align: justify;">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro culpa exercitationem minima nostrum! Earum optio, reprehenderit iure pariatur consequuntur adipisci?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro culpa exercitationem minima nostrum!
+                        Earum optio, reprehenderit iure pariatur consequuntur adipisci?
                     </p>
                     <div class="table-responsive">
                         <table class="table table-bordered">
@@ -80,7 +82,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>                    
+                    </div>
                     <p style="text-align: justify;">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat illo eius pariatur corporis
                         voluptatum accusamus voluptatem quaerat magnam excepturi! Fuga labore voluptate explicabo quas,
@@ -94,6 +96,85 @@
                         consequatur perferendis voluptas voluptatem illum impedit alias blanditiis ipsam, neque id
                         praesentium
                         dolorum aut sed, dignissimos nobis! Autem sapiente iusto ducimus doloremque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <hr class="featurette-divider my-2">
+            </div>
+        </div>
+    </div>
+
+    {{-- Harga Layanan --}}
+    <section id="Deskripsi">
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <h6 class="display-6 fw-bolder text-center text-success mt-2 mb-2"
+                    style="text-shadow: 2px 2px 2px rgba(56, 56, 56, 0.2);">Portofolio</h6>
+                <div class="col-md-10">
+                    <p style="text-align: justify;">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro culpa exercitationem minima nostrum!
+                        Earum optio, reprehenderit iure pariatur consequuntur adipisci?
+                    </p>
+                    <div class="row row-cols-1 row-cols-md-3 g-3 mb-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://placehold.co/300x200/green/white" class="bd-placeholder-img card-img-top"
+                                    alt="">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://placehold.co/300x200/blue/white" class="bd-placeholder-img card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Another wider card with supporting text below as a natural lead-in
+                                        to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="https://placehold.co/300x200/red/white" class="bd-placeholder-img card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Yet another wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: justify;">
                     </p>
                 </div>
             </div>
