@@ -86,8 +86,10 @@
                     Layanan</i></h4>
                 <div class="col-md-10">
                     <p style="text-align: justify;">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro culpa exercitationem minima nostrum!
-                        Earum optio, reprehenderit iure pariatur consequuntur adipisci?
+                        Portofolio layanan kami menampilkan beberapa contoh pekerjaan kami sebelumnya. Dari desain yang
+                        inovatif hingga implementasi yang sukses, kami telah membantu berbagai klien mencapai tujuan mereka.
+                        Lihatlah beberapa contoh di bawah ini untuk mendapatkan gambaran lebih jelas tentang layanan kami.
+                    </p>
                     </p>
                     <div class="row row-cols-1 row-cols-md-3 g-3 mb-3">
                         <div class="col">

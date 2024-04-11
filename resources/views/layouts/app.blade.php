@@ -106,9 +106,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="{{ route('landing') }}">Beranda</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('layanan') }}">Layanan</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="{{ route('layanan') }}" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
