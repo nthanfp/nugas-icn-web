@@ -80,6 +80,13 @@
             vertical-align: -.125em;
             fill: currentColor;
         }
+
+        .dropdown-item.bg-light.text-black:hover {
+            background-color: #28a745;
+            /* Warna hijau (success) saat hover */
+            color: #fff;
+            /* Warna teks putih saat hover */
+        }
     </style>
 </head>
 
@@ -101,6 +108,17 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('layanan') }}">Layanan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ route('layanan') }}" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Layanan
+                            </a>
+                            <ul class="dropdown-menu bg-light text-black">
+                                @foreach ($categories as $category)
+                                <li><a class="dropdown-item bg-light text-black" href="{{ route('layanan-custom', ['slug' => $category->slug]) }}">{{ $category->name }}</a></li> 
+                                @endforeach
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('blog') }}">Blog</a>

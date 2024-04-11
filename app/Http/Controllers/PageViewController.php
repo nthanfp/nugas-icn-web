@@ -2,27 +2,38 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\JokiCategory;
 use Illuminate\Http\Request;
 
 class PageViewController extends Controller
 {
     public function home(){
-        return view('home');
+        $categories = JokiCategory::select('name', 'slug')->get();
+        
+        return view('home', compact('categories'));
     }
 
     public function layanan(){
-        return view('layanan.index');
+        $categories = JokiCategory::select('name', 'slug')->get();
+
+        return view('layanan.index', compact('categories'));
     }
 
     public function layananCustom($slug){
-        return view('layanan.custom');
+        $categories = JokiCategory::select('name', 'slug')->get();
+
+        return view('layanan.custom', compact('categories'));
     }
 
     public function blog(){
-        return view('blog.index');
+        $categories = JokiCategory::select('name', 'slug')->get();
+
+        return view('blog.index', compact('categories'));
     }
 
     public function blogPost(){
-        return view('blog.post');
+        $categories = JokiCategory::select('name', 'slug')->get();
+        
+        return view('blog.post', compact('categories'));
     }
 }
