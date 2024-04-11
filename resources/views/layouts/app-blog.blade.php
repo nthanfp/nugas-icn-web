@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css', 'resources/css/blog.css'])
     <style>
         .bd-placeholder-img {
@@ -84,13 +85,13 @@
 
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex justify-content-between" style="text-decoration: none;">
-                    <a class="p-2 nav-link text-white" href="#">Beranda</a>
-                    <a class="p-2 nav-link text-white" href="#">Layanan</a>
-                    <a class="p-2 nav-link text-white" href="#">Ketentuan</a>
-                    <a class="p-2 nav-link text-white" href="#">Joki Individu</a>
-                    <a class="p-2 nav-link text-white" href="#">Joki Kelompok</a>
-                    <a class="p-2 nav-link text-white" href="#">Joki Tugas Akhir</a>
-                    <a class="p-2 nav-link text-white" href="#">Joki Ujian</a>
+                    <a class="p-2 nav-link text-white" href="{{ route('landing') }}">Beranda</a>
+                    <a class="p-2 nav-link text-white" href="{{ route('layanan') }}">Layanan</a>
+                    <a class="p-2 nav-link text-white" href="{{ route('landing') }}">Ketentuan</a>
+                    <a class="p-2 nav-link text-white" href="{{ route('layanan') }}">Joki Individu</a>
+                    <a class="p-2 nav-link text-white" href="{{ route('layanan') }}">Joki Kelompok</a>
+                    <a class="p-2 nav-link text-white" href="{{ route('layanan') }}">Joki Tugas Akhir</a>
+                    <a class="p-2 nav-link text-white" href="{{ route('layanan') }}">Joki Ujian</a>
                 </nav>
             </div>
         </div>
@@ -101,11 +102,8 @@
         <div class="container">
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                    <li class="nav-item"><a href="{{ route('landing') }}" class="nav-link px-2 text-muted">Beranda</a></li>
+                    <li class="nav-item"><a href="{{ route('layanan') }}" class="nav-link px-2 text-muted">Layanan</a></li>
                 </ul>
                 <p class="text-center text-muted">© 2024 {{ config('app.name', 'Nugas by ICN') }}</p>
             </footer>
