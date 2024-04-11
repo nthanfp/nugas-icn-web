@@ -11,10 +11,11 @@ class ArticleCategory extends Model
 
     protected $fillable = [
         'name',
+        'slug',
     ];
 
     public function articles()
     {
-        return $this->hasMany(Article::class, 'articles_category_id');
+        return $this->hasMany(Article::class);
     }
 }

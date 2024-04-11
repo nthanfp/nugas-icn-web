@@ -10,14 +10,17 @@ class Article extends Model
     use HasFactory;
 
     protected $fillable = [
-        'articles_category_id',
         'title',
+        'slug',
+        'thumbnail',
         'content',
         'author',
+        'is_published',
+        'article_category_id',
     ];
 
     public function category()
     {
-        return $this->belongsTo(ArticleCategory::class, 'articles_category_id');
+        return $this->belongsTo(ArticleCategory::class, 'article_category_id');
     }
 }
