@@ -157,20 +157,20 @@
                 <div class="col mb-3">
                     <h5 class="text-white">Menu</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Beranda</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Layanan</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Ketentuan</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('landing') }}" class="nav-link p-0 text-white">Beranda</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan') }}" class="nav-link p-0 text-white">Layanan</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('landing') }}" class="nav-link p-0 text-white">Ketentuan</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('blog') }}" class="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
 
                 <div class="col mb-3">
                     <h5 class="text-white">Layanan</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Tulis Tangan</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Ketik</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Makalah</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Essay</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'jasa-tulis-tangan']) }}" class="nav-link p-0 text-white">Jasa Tulis Tangan</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'jasa-ketik']) }}" class="nav-link p-0 text-white">Jasa Ketik</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'makalah']) }}" class="nav-link p-0 text-white">Makalah</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'essay']) }}" class="nav-link p-0 text-white">Essay</a></li>
                     </ul>
                 </div>
 
