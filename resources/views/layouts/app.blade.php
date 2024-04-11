@@ -135,15 +135,15 @@
                 <div class="col mb-3">
                     <h5 class="text-white">{{ config('app.name', 'Nugas by ICN') }}</h5>
                     <p class="text-white">
-                        Jl. Surya Sumantri No. 123
-                        Kelurahan Cihampelas
-                        Kecamatan Coblong
-                        Kota Bandung, Jawa Barat
+                        Ruko 08 Graha Rancamanyar,
+                        Kelurahan Rancamanyar,
+                        Kecamatan Baleendah,
+                        Kab. Bandung, Jawa Barat, 40375
                         Indonesia
                     </p>
                     <p class="text-white">
                         <li>
-                            <strong>Phone: </strong> +62 852 5022 4211
+                            <strong>Phone: </strong> +62 851 5502 2786
                         </li>
                         <li>
                             <strong>Email: </strong> nugas.icn@gmail.com
@@ -155,40 +155,37 @@
                 </div>
 
                 <div class="col mb-3">
-                    <h5 class="text-white">Section</h5>
+                    <h5 class="text-white">Menu</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Beranda</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Layanan</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Ketentuan</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
 
                 <div class="col mb-3">
-                    <h5 class="text-white">Section</h5>
+                    <h5 class="text-white">Layanan</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Tulis Tangan</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Ketik</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Makalah</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Essay</a></li>
                     </ul>
                 </div>
 
                 <div class="col mb-3">
-                    <h5 class="text-white">Section</h5>
+                    <h5 class="text-white">Layanan</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Tulis Tangan</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Ketik</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Makalah</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Essay</a></li>
                     </ul>
                 </div>
             </div>
             <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 pb-2 mt-4 mb-0 border-top">
-                <p class="text-white">© 2022 {{ config('app.name', 'Nugas by ICN') }}, Inc. All rights reserved.</p>
+                <p class="text-white">© 2024 {{ config('app.name', 'Nugas by ICN') }}, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-twitter"></i></a></li>
                     <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-instagram"></i></a></li>
