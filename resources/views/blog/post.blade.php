@@ -7,7 +7,7 @@
         <div class="row g-5">
             <div class="col-md-8">
                 <article class="blog-post">
-                    <img class="img-fluid rounded-2" src="https://placehold.co/1600x900/green/white">
+                    <img class="img-fluid rounded-2" src="{{ asset('storage/' . $post->banner) }}">
                     <h3 class="blog-post-title mt-2 mb-1">{{ $post->title }}</h3>
                     <p class="blog-post-meta">
                         {{ $post->created_at->format('F d, Y') }} by <a href="#">{{ $post->author->name }}</a>
