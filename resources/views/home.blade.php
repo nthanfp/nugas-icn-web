@@ -12,7 +12,9 @@
                         dengan Nugas ICN
                         hari ini! Sambut tantangan dengan percaya diri dan raih prestasi Anda yang terbaik.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn bg-white btn-lg px-4 me-md-2">Konsultasi Sekarang</button>
+                        <a href="https://wa.me/6285155022786">
+                            <button type="button" class="btn bg-white btn-lg px-4 me-md-2">Konsultasi Sekarang</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-10 mx-auto col-sm-8 col-lg-6">
@@ -130,11 +132,11 @@
                                         mahasiswa dengan menyelesaikan tugas-tugas individu mingguan.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-success"><i
-                                                    class="fas fa-shopping-cart"></i> Pesan</button>
-                                            <button type="button" class="btn btn-sm btn-primary"><i
+                                            <a href="https://wa.me/6285155022786" class="btn btn-sm btn-success"><i
+                                                class="fas fa-shopping-cart"></i> Pesan</i></a>
+                                            <a href="https://wa.me/6285155022786" class="btn btn-sm btn-primary"><i
                                                     class="fas fa-message"></i>
-                                                Konsultasi</button>
+                                                Konsultasi</a>
                                         </div>
                                     </div>
                                 </div>
@@ -146,15 +148,16 @@
                                     alt="Thumbnail">
                                 <div class="card-body">
                                     <p class="fs-4 fw-bold">Tugas Kelompok</p>
-                                    <p class="card-text" style="text-align: justify">Menghemat waktu diskusi dan jadwal bagi
+                                    <p class="card-text" style="text-align: justify">Menghemat waktu diskusi dan jadwal
+                                        bagi
                                         mahasiswa dengan menyelesaikan tugas kelompok mereka.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-success"><i
-                                                    class="fas fa-shopping-cart"></i> Pesan</button>
-                                            <button type="button" class="btn btn-sm btn-primary"><i
+                                            <a href="https://wa.me/6285155022786" class="btn btn-sm btn-success"><i
+                                                class="fas fa-shopping-cart"></i> Pesan</i></a>
+                                            <a href="https://wa.me/6285155022786" class="btn btn-sm btn-primary"><i
                                                     class="fas fa-message"></i>
-                                                Konsultasi</button>
+                                                Konsultasi</a>
                                         </div>
                                     </div>
                                 </div>
@@ -221,10 +224,10 @@
                     <div class="col-md-4">
                         <div class="card p-3 shadow text-center px-4">
                             <div class="user-image">
-                                <img src="https://i.imgur.com/PKHvlRS.jpg" class="rounded-circle" width="80">
+                                <img src="https://api.dicebear.com/8.x/pixel-art/svg?seed=John" class="rounded-circle" width="80">
                             </div>
                             <div class="user-content">
-                                <h5 class="mb-0 mt-2">Bruce Hardy</h5>
+                                <h5 class="mb-0 mt-2">Foden</h5>
                                 <span>Mahasiswa</span>
                                 <p>Nugas ICN sangat membantu saya mengatasi tugas-tugas sulit. Saya bisa fokus dan mendapat
                                     nilai yang lebih baik sekarang.</p>
@@ -242,10 +245,10 @@
                     <div class="col-md-4">
                         <div class="card p-3 shadow text-center px-4">
                             <div class="user-image">
-                                <img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle" width="80">
+                                <img src="https://api.dicebear.com/8.x/pixel-art/svg?seed=Tama" class="rounded-circle" width="80">
                             </div>
                             <div class="user-content">
-                                <h5 class="mb-0 mt-2">Mark Smith</h5>
+                                <h5 class="mb-0 mt-2">Tama</h5>
                                 <span>Mahasiswa</span>
                                 <p>Joki Tugas Kelompok dari Nugas ICN sangat membantu saya. Kami dapat menyelesaikan proyek
                                     dengan cepat dan hasilnya luar biasa!</p>
@@ -263,10 +266,10 @@
                     <div class="col-md-4">
                         <div class="card p-3 shadow text-center px-4">
                             <div class="user-image">
-                                <img src="https://i.imgur.com/ACeArwY.jpg" class="rounded-circle" width="80">
+                                <img src="https://api.dicebear.com/8.x/pixel-art/svg?seed=Albert" class="rounded-circle" width="80">
                             </div>
                             <div class="user-content">
-                                <h5 class="mb-0 mt-2">Veera Duncan</h5>
+                                <h5 class="mb-0 mt-2">Alberto</h5>
                                 <span>Siswa</span>
                                 <p>Menghadapi ujian tanpa stres berkat bantuan Joki Quiz dari Nugas ICN. Terima kasih telah
                                     membantu saya meraih nilai yang baik!</p>

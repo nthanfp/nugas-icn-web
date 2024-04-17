@@ -5,6 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    {{-- Simple Meta --}}
+    <meta name="description" content="{{ $post->excerpt }}">
+    <meta name="keywords" content="Nugas, ICN, penulisan, makalah, esai, artikel, paper, jasa penulisan">
+    <meta name="author" content="Nugas by ICN">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    {{-- Open Graph --}}
+    <meta name="og:title" content="{{ $post->title }}" />
+    <meta name="og:type" content="article" />
+    <meta name="og:url" content="{{ url()->current() }}" />
+    <meta name="og:image" content="{{ asset($post->thumbnail) }}" />
+    <meta name="og:site_name" content="{{ config('app.name', 'Nugas by ICN') }}" />
+    <meta name="og:description" content="{{ $post->excerpt }}" />
+    <meta name="og:locale" content="id_ID" />
+
+    {{-- Title & Icon --}}
+    <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }}</title>
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
+
     <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
     <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
@@ -73,7 +94,8 @@
                         <a class="nav-link text-white d-none d-sm-none d-md-block" href="#">Subscribe</a>
                     </div>
                     <div class="col-4 text-center">
-                        <img src="{{ asset('img/navbar.png') }}" alt="Logo" class="blog-header-logo img-fluid" width="200">
+                        <img src="{{ asset('img/navbar.png') }}" alt="Logo" class="blog-header-logo img-fluid"
+                            width="200">
                     </div>
                     <div class="col-4 d-flex justify-content-end align-items-center">
                         <div class="d-none d-sm-none d-md-flex">
@@ -102,8 +124,10 @@
         <div class="container">
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="{{ route('landing') }}" class="nav-link px-2 text-muted">Beranda</a></li>
-                    <li class="nav-item"><a href="{{ route('layanan') }}" class="nav-link px-2 text-muted">Layanan</a></li>
+                    <li class="nav-item"><a href="{{ route('landing') }}" class="nav-link px-2 text-muted">Beranda</a>
+                    </li>
+                    <li class="nav-item"><a href="{{ route('layanan') }}" class="nav-link px-2 text-muted">Layanan</a>
+                    </li>
                 </ul>
                 <p class="text-center text-muted">© 2024 {{ config('app.name', 'Nugas by ICN') }}</p>
             </footer>

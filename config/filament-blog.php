@@ -27,7 +27,7 @@ return [
      */
     'sort' => [
         'column' => 'published_at',
-        'direction' => 'asc',
+        'direction' => 'desc',
     ],
 
     /**

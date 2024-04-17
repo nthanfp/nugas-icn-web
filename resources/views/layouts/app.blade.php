@@ -9,16 +9,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    {{-- Simple Meta --}}
     <meta name="description"
         content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu.">
     <meta name="keywords" content="Nugas, ICN, penulisan, makalah, esai, artikel, paper, jasa penulisan">
     <meta name="author" content="Nugas by ICN">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    {{-- Open Graph --}}
+    <meta name="og:title" content="Nugas by ICN" />
+    {{-- <meta name="og:type" content="article" /> --}}
+    <meta name="og:url" content="{{ url()->current() }}" />
+    {{-- <meta name="og:image" content="{{ asset($post->thumbnail) }}" /> --}}
+    <meta name="og:site_name" content="{{ config('app.name', 'Nugas by ICN') }}" />
+    <meta name="og:description"
+        content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu." />
+    <meta name="og:locale" content="id_ID" />
+
+    {{-- Title & Icon --}}
     <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }}</title>
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
+
+    {{-- Fonts Google Inter --}}
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+
+    {{-- Fontawesome --}}
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
+    
+    {{-- Vite loaders --}}
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css', 'resources/css/blog.css'])
     <style>
         .head-title {
@@ -113,17 +135,16 @@
                             </a>
                             <ul class="dropdown-menu bg-light text-black">
                                 @foreach ($categories as $category)
-                                <li><a class="dropdown-item bg-light text-black" href="{{ route('layanan-custom', ['slug' => $category->slug]) }}">{{ $category->name }}</a></li> 
-                                @endforeach
+                                <li><a class="dropdown-item bg-light text-black" href="{{ route('layanan-custom', ['slug' => $category->slug]) }}">{{ $category->name }}</a></li> @endforeach
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('blog') }}">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <a class="nav-link" href="{{ route('blog') }}">Blog</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
     </header>
     <main>
         @yield('content')
@@ -157,27 +178,37 @@
                 <div class="col mb-3">
                     <h5 class="text-white">Menu</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="{{ route('landing') }}" class="nav-link p-0 text-white">Beranda</a></li>
-                        <li class="nav-item mb-2"><a href="{{ route('layanan') }}" class="nav-link p-0 text-white">Layanan</a></li>
-                        <li class="nav-item mb-2"><a href="{{ route('landing') }}" class="nav-link p-0 text-white">Ketentuan</a></li>
-                        <li class="nav-item mb-2"><a href="{{ route('blog') }}" class="nav-link p-0 text-white">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('landing') }}"
+                                class="nav-link p-0 text-white">Beranda</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan') }}"
+                                class="nav-link p-0 text-white">Layanan</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('landing') }}"
+                                class="nav-link p-0 text-white">Ketentuan</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('blog') }}"
+                                class="nav-link p-0 text-white">Blog</a></li>
                     </ul>
                 </div>
 
                 <div class="col mb-3">
                     <h5 class="text-white">Layanan</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'jasa-tulis-tangan']) }}" class="nav-link p-0 text-white">Jasa Tulis Tangan</a></li>
-                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'jasa-ketik']) }}" class="nav-link p-0 text-white">Jasa Ketik</a></li>
-                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'makalah']) }}" class="nav-link p-0 text-white">Makalah</a></li>
-                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug'=>'essay']) }}" class="nav-link p-0 text-white">Essay</a></li>
+                        <li class="nav-item mb-2"><a
+                                href="{{ route('layanan-custom', ['slug' => 'jasa-tulis-tangan']) }}"
+                                class="nav-link p-0 text-white">Jasa Tulis Tangan</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug' => 'jasa-ketik']) }}"
+                                class="nav-link p-0 text-white">Jasa Ketik</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug' => 'makalah']) }}"
+                                class="nav-link p-0 text-white">Makalah</a></li>
+                        <li class="nav-item mb-2"><a href="{{ route('layanan-custom', ['slug' => 'essay']) }}"
+                                class="nav-link p-0 text-white">Essay</a></li>
                     </ul>
                 </div>
 
                 <div class="col mb-3">
                     <h5 class="text-white">Layanan</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Tulis Tangan</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Tulis
+                                Tangan</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Ketik</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Makalah</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Essay</a></li>
@@ -194,6 +225,23 @@
             </div>
         </div>
     </footer>
-</body>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/661f87e8a0c6737bd12ce285/1hrlilpgg';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    </body>
 
 </html>
