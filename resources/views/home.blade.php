@@ -13,7 +13,7 @@
                         hari ini! Sambut tantangan dengan percaya diri dan raih prestasi Anda yang terbaik.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <a href="https://wa.me/6285155022786">
-                            <button type="button" class="btn bg-white btn-lg px-4 me-md-2">Konsultasi Sekarang</button>
+                            <button type="button" class="btn bg-white btn-lg px-4 me-md-2"><i class="fa-regular fa-message"></i> Konsultasi Sekarang</button>
                         </a>
                     </div>
                 </div>

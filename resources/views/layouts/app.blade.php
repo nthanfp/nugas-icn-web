@@ -39,7 +39,7 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
     {{-- Vite loaders --}}
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css', 'resources/css/blog.css'])
     <style>
@@ -135,16 +135,17 @@
                             </a>
                             <ul class="dropdown-menu bg-light text-black">
                                 @foreach ($categories as $category)
-                                <li><a class="dropdown-item bg-light text-black" href="{{ route('layanan-custom', ['slug' => $category->slug]) }}">{{ $category->name }}</a></li> @endforeach
+                                <li><a class="dropdown-item bg-light text-black" href="{{ route('layanan-custom', ['slug' => $category->slug]) }}">{{ $category->name }}</a></li>
+                                @endforeach
                             </ul>
                         </li>
                         <li class="nav-item">
-    <a class="nav-link" href="{{ route('blog') }}">Blog</a>
-    </li>
-    </ul>
-    </div>
-    </div>
-    </nav>
+                            <a class="nav-link" href="{{ route('blog') }}">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         @yield('content')
@@ -156,7 +157,7 @@
                 <div class="col mb-3">
                     <h5 class="text-white">{{ config('app.name', 'Nugas by ICN') }}</h5>
                     <p class="text-white">
-                        Ruko 08 Graha Rancamanyar,
+                        Graha Rancamanyar,
                         Kelurahan Rancamanyar,
                         Kecamatan Baleendah,
                         Kab. Bandung, Jawa Barat, 40375
@@ -209,7 +210,8 @@
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Tulis
                                 Tangan</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Ketik</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Jasa Ketik</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Makalah</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Essay</a></li>
                     </ul>
@@ -242,6 +244,6 @@
     </script>
     <!--End of Tawk.to Script-->
 
-    </body>
+</body>
 
 </html>
