@@ -151,12 +151,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('blog') }}">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <a class="nav-link" href="{{ route('blog') }}">Blog</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
     </header>
     <main>
         @yield('content')
@@ -255,6 +255,19 @@
     </script>
     <!--End of Tawk.to Script-->
 
-</body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L02GFZQ21V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L02GFZQ21V');
+    </script>
+
+    </body>
 
 </html>
