@@ -10,27 +10,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    {{-- Simple Meta --}}
-    <meta name="description"
-        content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu.">
-    <meta name="keywords" content="Nugas, ICN, penulisan, makalah, esai, artikel, paper, jasa penulisan">
-    <meta name="author" content="Nugas by ICN">
+    {{-- Google Robot --}}
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
 
-    {{-- Open Graph --}}
-    <meta name="og:title" content="Nugas by ICN" />
-    {{-- <meta name="og:type" content="article" /> --}}
-    <meta name="og:url" content="{{ url()->current() }}" />
-    {{-- <meta name="og:image" content="{{ asset($post->thumbnail) }}" /> --}}
-    <meta name="og:site_name" content="{{ config('app.name', 'Nugas by ICN') }}" />
-    <meta name="og:description"
-        content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu." />
-    <meta name="og:locale" content="id_ID" />
+    {{-- Title --}}
+    <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik</title>
 
-    {{-- Title & Icon --}}
-    <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }}</title>
+    {{-- Favicon --}}
     <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik" />
+    <meta name="description"
+        content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title"
+        content="@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik" />
+    <meta property="og:description"
+        content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu." />
+    <meta property="og:image" content="{{ asset('img/og-image.png') }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ url()->current() }}" />
+    <meta property="twitter:title"
+        content="@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik" />
+    <meta property="twitter:description"
+        content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu." />
+    <meta property="twitter:image" content="{{ asset('img/og-image.png') }}" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
 
     {{-- Fonts Google Inter --}}
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
@@ -134,9 +147,7 @@
                                 Layanan
                             </a>
                             <ul class="dropdown-menu bg-light text-black">
-                                @foreach ($categories as $category)
-                                <li><a class="dropdown-item bg-light text-black" href="{{ route('layanan-custom', ['slug' => $category->slug]) }}">{{ $category->name }}</a></li>
-                                @endforeach
+                                @foreach ($categories as $category) <li><a class="dropdown-item bg-light text-black" href="{{ route('layanan-custom', ['slug' => $category->slug]) }}">{{ $category->name }}</a></li> @endforeach
                             </ul>
                         </li>
                         <li class="nav-item">
