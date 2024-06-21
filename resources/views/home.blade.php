@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="col-10 mx-auto col-sm-8 col-lg-6">
-                    <img src="{{ asset('img/hero2.png') }}" class="d-block mx-auto img-fluid" alt="Bootstrap Themes"
+                    <img src="{{ asset('img/hero2.webp') }}" class="d-block mx-auto img-fluid" alt="Bootstrap Themes"
                         width="700" height="500" loading="lazy">
                 </div>
             </div>
@@ -124,7 +124,7 @@
                     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
                         <div class="col">
                             <div class="card shadow-lg">
-                                <img src="{{ asset('img/Individu.png') }}" class="bd-placeholder-img card-img-top"
+                                <img src="{{ asset('img/Individu.webp') }}" class="bd-placeholder-img card-img-top"
                                     alt="Thumbnail">
                                 <div class="card-body">
                                     <p class="fs-4 fw-bold">Tugas Individu</p>
@@ -144,7 +144,7 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-lg">
-                                <img src="{{ asset('img/Kelompok.png') }}" class="bd-placeholder-img card-img-top"
+                                <img src="{{ asset('img/Kelompok.webp') }}" class="bd-placeholder-img card-img-top"
                                     alt="Thumbnail">
                                 <div class="card-body">
                                     <p class="fs-4 fw-bold">Tugas Kelompok</p>
@@ -165,7 +165,7 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-lg">
-                                <img src="{{ asset('img/Tugas-Akhir.png') }}" class="bd-placeholder-img card-img-top"
+                                <img src="{{ asset('img/Tugas-Akhir.webp') }}" class="bd-placeholder-img card-img-top"
                                     alt="Thumbnail">
                                 <div class="card-body">
                                     <p class="fs-4 fw-bold">Tugas Akhir</p>
@@ -184,7 +184,7 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-lg">
-                                <img src="{{ asset('img/Ujian.png') }}" class="bd-placeholder-img card-img-top"
+                                <img src="{{ asset('img/Ujian.webp') }}" class="bd-placeholder-img card-img-top"
                                     alt="Thumbnail">
                                 <div class="card-body">
                                     <p class="fs-4 fw-bold">Quiz & Ujian</p>
@@ -299,7 +299,7 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="{{ asset('img/cta.png') }}" class="d-block mx-lg-auto img-fluid rounded-3"
+                    <img src="{{ asset('img/cta.webp') }}" class="d-block mx-lg-auto img-fluid rounded-3"
                         alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">

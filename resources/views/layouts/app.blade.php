@@ -1,6 +1,6 @@
 @php
     $randomNumber = rand(1, 3);
-    $url = asset("img/{$randomNumber}.png");
+    $url = asset("img/{$randomNumber}.webp");
 @endphp
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -18,7 +18,7 @@
     <title>@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik</title>
 
     {{-- Favicon --}}
-    <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon.ico') }}">
+    <link rel="icon" type="image/webp" href="{{ asset('img/favicon/favicon.ico') }}">
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik" />
@@ -32,7 +32,7 @@
         content="@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik" />
     <meta property="og:description"
         content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu." />
-    <meta property="og:image" content="{{ asset('img/og-image.png') }}" />
+    <meta property="og:image" content="{{ asset('img/og-image.webp') }}" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -41,7 +41,7 @@
         content="@yield('title') - {{ config('app.name', 'Nugas by ICN') }} - Joki Tugas Terbaik" />
     <meta property="twitter:description"
         content="Nugas by ICN adalah platform yang menyediakan berbagai layanan penulisan seperti membuat makalah, esai, artikel, dan paper dengan kualitas terbaik dan tepat waktu." />
-    <meta property="twitter:image" content="{{ asset('img/og-image.png') }}" />
+    <meta property="twitter:image" content="{{ asset('img/og-image.webp') }}" />
 
     <!-- Meta Tags Generated with https://metatags.io -->
 
@@ -130,7 +130,7 @@
         <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-success" data-bs-theme="dark">
             <div class="container container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="{{ asset('img/navbar.png') }}" alt="Logo" class="img-fluid" width="150">
+                    <img src="{{ asset('img/navbar.webp') }}" alt="Logo" class="img-fluid" width="150">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
