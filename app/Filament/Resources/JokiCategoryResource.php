@@ -11,8 +11,6 @@ use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
 
 class JokiCategoryResource extends Resource
@@ -35,6 +33,59 @@ class JokiCategoryResource extends Resource
                     ->maxLength(255),
                 Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
+                Forms\Components\Section::make()->schema([
+                    Forms\Components\Repeater::make('prices')
+                        ->relationship()
+                        ->schema([
+                            Forms\Components\TextInput::make('name')
+                                ->required()
+                                ->maxLength(255),
+                            Forms\Components\TextInput::make('price')
+                                ->required()
+                                ->numeric()
+                                ->prefix('Rp'),
+                            Forms\Components\TextInput::make('unit')
+                                ->required()
+                                ->maxLength(255),
+                            Forms\Components\Textarea::make('description')
+                                ->columnSpanFull(),
+                        ])
+                        ->columns(['md' => 3, 'xl' => 3])
+                        ->reorderable(true)
+                        ->reorderableWithButtons()
+                        ->collapsed()
+                        ->cloneable()
+                        ->orderColumn('id')
+                        ->addActionLabel('Add Joki Prices')
+                ]),
+                Forms\Components\Section::make()->schema([
+                    Forms\Components\Repeater::make('portfolios')
+                        ->relationship()
+                        ->schema([
+                            Forms\Components\TextInput::make('name')
+                                ->required()
+                                ->maxLength(255),
+                            Forms\Components\DatePicker::make('task_date'),
+                            Forms\Components\TextInput::make('file_url')
+                                ->maxLength(255),
+                            Forms\Components\Textarea::make('description')
+                                ->columnSpanFull(),
+                            Forms\Components\FileUpload::make('thumbnail')
+                                ->image()
+                                ->imageEditor()
+                                ->imageEditorAspectRatios([
+                                    '3:2',
+                                ])
+                                ->columnSpanFull(),
+                        ])
+                        ->columns(['md' => 3, 'xl' => 3])
+                        ->reorderable(true)
+                        ->reorderableWithButtons()
+                        ->collapsed()
+                        ->cloneable()
+                        ->orderColumn('id')
+                        ->addActionLabel('Add Joki Portofolio')
+                ]),
             ]);
     }
 
